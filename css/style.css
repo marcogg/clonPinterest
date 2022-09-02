@@ -22,10 +22,11 @@
     padding: 20px;
     position: fixed;
     background-color: white;
+    z-index: 3;
 }
 
 .left-nav {
-    width: 25%;
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -41,6 +42,7 @@
 
 .logo {
     width: 30px;
+    margin-right: 5px;
 }
 
 .active {
@@ -54,7 +56,7 @@
 .search-nav {
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 60%;
 }
 
 .searchbar {
@@ -72,7 +74,7 @@
 }
 
 .profile-nav {
-    width: 25%;
+    width: 20%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -104,39 +106,166 @@
 
 /* ----------------END: NAVIGATION----------------- */
 
+
+/* ----------------BEGIN: FEED----------------- */
+
 .container {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
-    width: 900px;
 }
 
 .feed {
-    display: grid;
+    margin-top: 100px;
     grid-gap: 20px;
-    width: 100%;
-    height: 900px;
-    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 90%;
+    columns: 3;
 }
 
 .post {
     background-color: white;
+    margin-bottom: 50px;
 }
 
 .post-title {
     font-weight: bold;
     font-size: 14pt;
+    display: flex;
+    align-items: center;
 }
 
 .post-title::before {
-    content: url("../img/avatar.svg");
+    background-image: url('../img/avatar.svg');
+    background-size: 30px;
     display: inline-block;
-    width: 10px;
-    height: 10px;
+    width: 30px;
+    height: 30px;
+    content: "";
 }
 
 .img-responsive {
     width: 100%;
 }
 
+.post-img {
+    border-radius: 16px;
+}
 
-/* ----------------BEGIN: FEED----------------- */
+.container-post {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    border-radius: 16px;
+}
+
+.colection h4:after {
+    display: inline-block;
+    content: url('../img/dropdown.svg');
+    width: 10px;
+    height: 10px;
+    filter: invert(1);
+    margin-left: 5px;
+}
+
+.overlay .pin-btn,
+.overlay h4 {
+    color: white;
+}
+
+.header-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 12px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pin-btn {
+    background-color: #E60023;
+    padding: 10px 14px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.pin-btn:hover {
+    background-color: #ad081b;
+}
+
+.post:hover .overlay,
+.post:focus .overlay {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.637);
+    z-index: 2;
+}
+
+.img-share {
+    width: 20px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+.site-link:before a {
+    content: url(../img/link.svg);
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+}
+
+.footer-links div {
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+
+
+/* --------------------MOBILE------------------------ */
+
+@media screen and (max-width:768px) {
+    .nav {
+        justify-content: center;
+    }
+    .left-nav {
+        display: none;
+    }
+    .searchbar-nav {
+        width: 60%;
+    }
+    .profile-nav {
+        justify-content: flex-start;
+        width: 30%;
+    }
+    .logo-container {
+        width: 10%;
+    }
+    .icons {
+        width: 24px;
+    }
+    .feed {
+        columns: 2;
+    }
+    .post-title {
+        font-size: 14px;
+    }
+}
+
+
+/* -------------------END: MOBILE-------------------- */

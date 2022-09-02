@@ -7,65 +7,923 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Pinterest - Marco García</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/pinterest-logo.svg" type="image/x-icon">
 </head>
 
 <body>
-    <main>
-        <header>
-            <nav class="nav">
-                <!-- BEGIN:LEFT NAV -->
-                <div class="left-nav">
-                    <a href="index.html">
-                        <img src="./img/pinterest-logo.svg" class="logo">
+    <header>
+        <nav class="nav" id="navbar-pinterest">
+            <!-- LOGO -->
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="./img/pinterest-logo.svg" class="logo">
+                </a>
+            </div>
+
+            <!-- END:LOGO -->
+            <!-- BEGIN:LEFT NAV -->
+            <div class="left-nav">
+                <a href="#" class="active">Inicio</a>
+                <a href="#">Hoy</a>
+                <a href="#">Crear</a>
+            </div>
+            <!-- END: LEFT NAV -->
+            <!-- BEGIN:SEARCHBAR -->
+            <div class="search-nav">
+                <input class="searchbar" type="text" placeholder="Buscar">
+            </div>
+            <!-- END:SEARCHBAR -->
+            <div class="profile-nav">
+                <div class="icons-container">
+                    <a href="#">
+                        <img src="./img/notifications.svg" class="icons"></a>
+                </div>
+                <div class="icons-container">
+                    <a href="#">
+                        <img src="./img/messages.svg" class="icons"></a>
+                </div>
+                <div class="icons-container">
+                    <a href="">
+                        <img src="./img/avatar.svg" class="icons">
                     </a>
-                    <a href="#" class="active">Inicio</a>
-                    <a href="#">Hoy</a>
-                    <a href="#">Crear</a>
                 </div>
-                <!-- END: LEFT NAV -->
-                <!-- BEGIN:SEARCHBAR -->
-                <div class="search-nav">
-                    <input class="searchbar" type="text" placeholder="Buscar">
+                <div class="icons-container">
+                    <a href="#">
+                        <img src="./img/dropdown.svg" class="icons dropdown">
+                    </a>
                 </div>
-                <!-- END:SEARCHBAR -->
-                <div class="profile-nav">
-                    <div class="icons-container">
-                        <a href="#">
-                            <img src="./img/notifications.svg" class="icons"></a>
-                    </div>
-                    <div class="icons-container">
-                        <a href="#">
-                            <img src="./img/messages.svg" class="icons"></a>
-                    </div>
-                    <div class="icons-container">
-                        <a href="">
-                            <img src="./img/avatar.svg" class="icons">
-                        </a>
-                    </div>
-                    <div class="icons-container">
-                        <a href="#">
-                            <img src="./img/dropdown.svg" class="icons dropdown">
-                        </a>
-                    </div>
-                </div>
-                </div>
-            </nav>
-        </header>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main id="content">
         <section>
             <div class="container">
                 <div class="feed">
+                    <!-- BEGIN:POST -->
                     <div class="post">
-                        <img src="./img/imagen1.jpg" alt="pinterest 1" class="img-responsive">
-                        <h3 class="post-title">Lorem ipsum</h3>
+                        <div class="container-post">
+                            <img src="./img/imagen2.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="site-link">
+                                        <a href="#">sitioweb.com</a>
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
                     </div>
+                    <!-- END:POST -->
+                    <!-- BEGIN:POST -->
                     <div class="post">
-                        <img src="./img/imagen2.jpg" alt="pinterest 2" class="img-responsive">
-                        <h3 class="post-title">Lorem ipsum</h3>
+                        <div class="container-post">
+                            <img src="./img/imagen3.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="link">
+                                        sitioweb.com
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
                     </div>
+                    <!-- END: POST -->
+                    <!-- BEGIN:POST -->
                     <div class="post">
-                        <img src="./img/imagen3.jpg" alt="pinterest 3" class="img-responsive">
-                        <h3 class="post-title">Lorem ipsum</h3>
+                        <div class="container-post">
+                            <img src="./img/imagen4.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="link">
+                                        sitioweb.com
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
                     </div>
+                    <!-- END: POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen5.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="link">
+                                        sitioweb.com
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END: POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen6.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="link">
+                                        sitioweb.com
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END: POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen7.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="link">
+                                        sitioweb.com
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END: POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen8.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="link">
+                                        sitioweb.com
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END: POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen9.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="link">
+                                        sitioweb.com
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END: POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen10.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="link">
+                                        sitioweb.com
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END: POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen11.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="link">
+                                        sitioweb.com
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END: POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen12.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="link">
+                                        sitioweb.com
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END: POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen13.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="link">
+                                        sitioweb.com
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END: POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen14.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="link">
+                                        sitioweb.com
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END: POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen15.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="link">
+                                        sitioweb.com
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END: POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen16.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="site-link">
+                                        <a href="#">sitioweb.com</a>
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END:POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen17.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="site-link">
+                                        <a href="#">sitioweb.com</a>
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END:POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen18.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="site-link">
+                                        <a href="#">sitioweb.com</a>
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END:POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen19.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="site-link">
+                                        <a href="#">sitioweb.com</a>
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END:POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen20.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="site-link">
+                                        <a href="#">sitioweb.com</a>
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END:POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen21.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="site-link">
+                                        <a href="#">sitioweb.com</a>
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END:POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen22.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="site-link">
+                                        <a href="#">sitioweb.com</a>
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END:POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen23.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="site-link">
+                                        <a href="#">sitioweb.com</a>
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END:POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen24.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="site-link">
+                                        <a href="#">sitioweb.com</a>
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END:POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen25.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="site-link">
+                                        <a href="#">sitioweb.com</a>
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END:POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen26.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="site-link">
+                                        <a href="#">sitioweb.com</a>
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END:POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen27.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="site-link">
+                                        <a href="#">sitioweb.com</a>
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END:POST -->
+                    <!-- BEGIN:POST -->
+                    <div class="post">
+                        <div class="container-post">
+                            <img src="./img/imagen28.jpg" alt="pinterest 1" class="img-responsive post-img">
+                            <div class="overlay">
+                                <div class="header-links">
+                                    <div class="colection">
+                                        <h4>Colección</h4>
+                                    </div>
+                                    <div class="pin-btn">
+                                        Guardar
+                                    </div>
+                                </div>
+
+                                <div class="footer-links">
+                                    <div class="site-link">
+                                        <a href="#">sitioweb.com</a>
+                                    </div>
+                                    <div class="share">
+                                        <img src="./img/download.svg" class="img-share">
+                                    </div>
+                                    <div class="options">
+                                        <img src="./img/options.svg" class="img-share">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-title">
+                            <h3>Lorem ipsum</h3>
+                        </div>
+                    </div>
+                    <!-- END:POST -->
                 </div>
             </div>
 
